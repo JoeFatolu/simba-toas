@@ -131,6 +131,8 @@ const Register = () => {
         <title>Register - Toas</title>
       </Helmet>
       <form onSubmit={formik.handleSubmit}>
+        <h1>Welocome to Toas</h1>
+        <p>Create an account</p>
         <Input label="First Name" id="firstName" name="firstName" autoComplete="given-name" placeholder="Enter your First Name" onChange={formik.handleChange} onBlur={formik.handleBlur} />
         <Input label="Last Name" id="firstName" name="lastName" placeholder="Enter your Last Name" autoComplete="last-name" onChange={formik.handleChange} onBlur={formik.handleBlur} />
         <Input label="Email" id="email" name="email" type="email" autoComplete="email" placeholder="Enter your Email" onChange={formik.handleChange} onBlur={formik.handleBlur} />
