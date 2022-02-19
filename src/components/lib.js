@@ -121,7 +121,7 @@ const FullPageSpinnerStyles = styled.div`
 `;
 
 function FullPageSpinner() {
-  return <FullPageSpinnerStyles>{/* <Spinner /> */}</FullPageSpinnerStyles>;
+  return <FullPageSpinnerStyles>Loading ...</FullPageSpinnerStyles>;
 }
 
 function ErrorMessage({ error, variant = "stacked", ...props }) {
