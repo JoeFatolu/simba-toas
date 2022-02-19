@@ -1,10 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-const spin = keyframes`
-	0% { transform: rotate(0deg);}
-	100% { transform: rotate(360deg);}
-`;
 
 const FieldSet = styled.fieldset`
   width: 100%;

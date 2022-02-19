@@ -9,12 +9,13 @@ function handleUserResponse({ data }) {
   return data.user;
 }
 
-function login(body) {
+async function login(body) {
   return client("user/login", body).then(handleUserResponse);
 }
 
-function register(body) {
-  return client("user/register", body).then(handleUserResponse);
+async function register(body) {
+  const result = await client("user/register", body);
+  return handleUserResponse(result);
 }
 
 async function logout() {

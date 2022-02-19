@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
-
-import Icon from "./components/Icon";
 import { NotFoundScreen } from "./screens/not-found";
 import DashBoard from "./screens/Dashboard";
 import Dialog from "./modal";
@@ -178,6 +176,7 @@ const NavModal = styled.div`
     }
   }
 `;
+
 const Nav = ({ user }) => {
   return (
     <NavStyles>
